@@ -15,6 +15,7 @@ export type IPool = {
 // eslint-disable-next-line no-shadow
 export enum PredefinedPoolName {
     MoneroOcean = 'moneroocean',
+    LibertyPool = 'liberty-pool',
     MineXMR = 'minexmr',
     SupportXMR = 'supportxmr',
     nanopool = 'nanopool',
@@ -41,6 +42,9 @@ export type IPredefinedPools = Record<PredefinedPoolName, IPredefinedPoolInfo>;
 export const predefinedPools:IPredefinedPools = {
   [PredefinedPoolName.MoneroOcean]: {
     displayName: 'MoneroOcean', fee: 0, method: 'PPLNS', threshold: 0.003,
+  },
+  [PredefinedPoolName.LibertyPool]: {
+    displayName: 'Liberty Pool', fee: 0.25, method: 'PPLNS', threshold: 0.003,
   },
   [PredefinedPoolName.MineXMR]: {
     displayName: 'MineXMR', fee: 1, method: 'PPLNS', threshold: 0.004,
@@ -75,6 +79,10 @@ export const predefinedPoolsList: IPredefinedPool[] = Object
 export {
   MoneroOcean,
 } from './moneroocean';
+
+export {
+  LibertyPool,
+} from './liberty-pool';
 
 export {
   MineXMR,
