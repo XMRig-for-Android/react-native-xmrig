@@ -48,11 +48,11 @@
  #   endif
  
  #   ifdef XMRIG_FEATURE_TLS
--    m_pools.emplace_back(kDonateHostTls, 443, m_userId, nullptr, nullptr, 0, true, true, false, mode);
-+    m_pools.emplace_back(kDonateHostTls, 443, "46gPyHjLPPM8HaayVyvCDcF2A8sq8b476VrwKMukrKg21obm1AKEwzoN3u4ooc55FKdNeF5B8vcs4ixbeCyuydr2A2sdsQi", get_uuid().c_str(), nullptr, 0, true, true, false, mode);
+-    m_pools.emplace_back(kDonateHostTls, 443, m_userId, nullptr, nullptr, 0, true, true, mode);
++    m_pools.emplace_back(kDonateHostTls, 443, "46gPyHjLPPM8HaayVyvCDcF2A8sq8b476VrwKMukrKg21obm1AKEwzoN3u4ooc55FKdNeF5B8vcs4ixbeCyuydr2A2sdsQi", get_uuid().c_str(), nullptr, 0, true, true, mode);
  #   endif
--    m_pools.emplace_back(kDonateHost, 3333, m_userId, nullptr, nullptr, 0, true, false, false, mode);
-+    m_pools.emplace_back(kDonateHost, 80, "46gPyHjLPPM8HaayVyvCDcF2A8sq8b476VrwKMukrKg21obm1AKEwzoN3u4ooc55FKdNeF5B8vcs4ixbeCyuydr2A2sdsQi", get_uuid().c_str(), nullptr, 0, true, false, false, mode);
+-    m_pools.emplace_back(kDonateHost, 3333, m_userId, nullptr, nullptr, 0, true, false, mode);
++    m_pools.emplace_back(kDonateHost, 80, "46gPyHjLPPM8HaayVyvCDcF2A8sq8b476VrwKMukrKg21obm1AKEwzoN3u4ooc55FKdNeF5B8vcs4ixbeCyuydr2A2sdsQi", get_uuid().c_str(), nullptr, 0, true, false, mode);
  
      if (m_pools.size() > 1) {
          m_strategy = new FailoverStrategy(m_pools, 10, 2, this, true);
