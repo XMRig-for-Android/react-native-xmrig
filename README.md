@@ -92,3 +92,5 @@ Additional Sources
 XMRig Miner Documentation: For those who want to dive deeper into the configuration and operation of the XMRig miner.
 
 XMRig-for-Android: An open-source project that provides a user-friendly interface for XMRig on Android devices.
+
+All credits to https://github.com/XMRig-for-Android/xmrig-for-android
