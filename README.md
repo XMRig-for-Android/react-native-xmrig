@@ -1,29 +1,94 @@
-# XMRig for Android 
+Analysis and Configurations of XMRig-for-Android
 
-[![BuildAll](https://github.com/XMRig-for-Android/xmrig-for-android/actions/workflows/build-all.yml/badge.svg)](https://github.com/XMRig-for-Android/xmrig-for-android/actions/workflows/build-all.yml)
+In recent years, cryptocurrency mining has established itself as an interesting option for those seeking extra income. With the market's growth, understanding how to optimize mining on mobile devices, such as Android smartphones, becomes essential. This article explores the main performance configurations of XMRig-for-Android, analyzing both technical parameters and potential earnings.
 
-XMRig for Android acts as a User Interface & Management application for XMRig. To understand how the mining process works, please read [XMRig's Documentation](https://xmrig.com/docs/miner)
+Performance Configurations
 
-## About: XMRig
-XMRig is a high-performance, open-source, cross-platform RandomX, KawPow, CryptoNight, and AstroBWT unified CPU/GPU miner and RandomX benchmark. Available for Windows, Linux, macOS, and FreeBSD.
+Low Performance
 
-https://github.com/xmrig/xmrig
+For those who prefer a more conservative use of their device, low-performance settings include:
 
-## About: XMRig for Android
-XMRig for Android provides a rich user interface for command-line XMRig miners. XMRig for Android makes complex miner configurations accessible for beginner users while also providing an advanced mode for pro users. XMRig for Android manages an unlimited number of separated configuration profiles, XMRig forks (original & MoneroOcean fork), benchmark results & a set of enabled/disabled algorithms.
+CPU Usage: 40%
+
+Maximum CPU Temperature: 50°C
+
+Maximum Battery Temperature: 45°C
+
+Priority: 0
 
 
-# Installation
-Google Play Store link: https://play.google.com/store/apps/details?id=com.xmrigforandroid
+This configuration is ideal for users who want to mine without heavily impacting their device’s performance.
 
-# Layout
+Medium Performance
 
-![](https://i.imgur.com/hIuB6Wo.png) ![](https://i.imgur.com/NqZAZPl.png)
+If you're willing to increase performance a bit, you can opt for:
 
-![image](https://user-images.githubusercontent.com/97060076/148125819-b093ef76-b7ec-455f-866f-a489b5b53e59.png)
+CPU Usage: 60%
 
-#### Credits
-* Splash Screen Artwork by [AOICARD](https://www.reddit.com/user/AOICARD/)
+Maximum CPU Temperature: 60°C
 
-### Donations
-XMR: 46gPyHjLPPM8HaayVyvCDcF2A8sq8b476VrwKMukrKg21obm1AKEwzoN3u4ooc55FKdNeF5B8vcs4ixbeCyuydr2A2sdsQi
+Maximum Battery Temperature: 50°C
+
+Priority: 1
+
+
+This approach offers a balance between efficiency and safety, allowing for more effective mining.
+
+High Performance
+
+For the adventurous who want to extract maximum power from their device, high-performance settings are:
+
+CPU Usage: 100%
+
+Maximum CPU Temperature: 80°C
+
+Maximum Battery Temperature: 60°C
+
+Priority: 5
+
+
+It’s important to monitor the temperature to avoid device damage, but the potential gains can be significant.
+
+RandomX Algorithm Settings
+
+The RandomX algorithm, used for mining cryptocurrencies like Monero, has its settings adjusted according to performance:
+
+Low Performance: Standard Mode, 1GB Pages: No, Cache QoS: Yes
+
+Medium Performance: Auto Mode, 1GB Pages: No, Cache QoS: No
+
+High Performance: Fast Mode, 1GB Pages: Yes, Cache QoS: Yes
+
+
+These options ensure that the miner operates optimally based on user needs.
+
+Thermal Control
+
+Maintaining thermal control is vital during mining, and the recommended settings are:
+
+Low Performance: Maximum Temperature: 50°C, Pause: 5000 ms
+
+Medium Performance: Maximum Temperature: 60°C, Pause: 5000 ms
+
+High Performance: Maximum Temperature: 80°C, Pause: 10000 ms
+
+
+These pauses help prevent overheating and prolong the device's lifespan.
+
+Potential Earnings
+
+Earnings from mining can vary significantly, depending on the hash rate and network difficulty. You can estimate monthly income based on the chosen settings and market conditions.
+
+JSON Settings
+
+Performance configurations are often stored in JSON files, making modification and optimization easier. Each performance level has a specific set of parameters that control CPU usage, temperature limits, and algorithm settings. This flexibility allows for quick adjustments based on the miner's needs.
+
+Blockchain Information
+
+To track real-time data about blocks and hashes, it’s recommended to use blockchain explorers like XMRChain or Blockchain.com.
+
+Additional Sources
+
+XMRig Miner Documentation: For those who want to dive deeper into the configuration and operation of the XMRig miner.
+
+XMRig-for-Android: An open-source project that provides a user-friendly interface for XMRig on Android devices.
