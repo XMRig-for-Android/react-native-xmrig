@@ -1,0 +1,57 @@
+{
+  "cpu": {
+    "enabled": true,
+    "usage": 40, // Increased CPU utilization to 40%
+    "settings": {
+      "huge-pages": false, // Huge pages disabled for lower performance
+      "threads": [
+        {
+          "index": 0,
+          "low_power_mode": true // Enabling low power mode for this thread
+        },
+        {
+          "index": 1,
+          "low_power_mode": true // Enabling low power mode for this thread
+        },
+        {
+          "index": 2,
+          "low_power_mode": true // Enabling low power mode for this thread
+        },
+        {
+          "index": 3,
+          "low_power_mode": true // Enabling low power mode for this thread
+        }
+      ]
+    }
+  },
+  "performance": {
+    "mode": "low", // Low performance mode
+    "description": "Low configuration using 40% CPU"
+  },
+  "api": {
+    "id": null,
+    "worker-id": null
+  },
+  "http": {
+    "enabled": true,
+    "host": "127.0.0.1", // Localhost for the server
+    "port": 50080, // Custom port for the server
+    "access-token": "XMRigForAndroid", // Access token for the API
+    "restricted": false // Allow unrestricted access
+  },
+  "autosave": true,
+  "background": false,
+  "colors": true,
+  "title": true,
+  "pools": [
+    {
+      "url": "pool.supportxmr.com:3333", // Mining pool URL
+      "user": "Wallet address or name", // User identifier for the pool
+      "pass": "x", // Password for the pool (often unused)
+      "enabled": true // Enable this pool
+    }
+  ],
+  "log-file": null, // Log file configuration
+  "donate-level": 5, // Donation level (percentage of hashes contributed)
+  "verbose": 0 // Verbosity level of logs
+}
